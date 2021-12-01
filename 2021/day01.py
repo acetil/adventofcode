@@ -1,4 +1,4 @@
-f = open("day1.txt")
+f = open("day01.txt")
 
 vals = [int(i) for i in f.readlines()]
 
