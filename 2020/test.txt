@@ -1,0 +1,1104 @@
+Id multiple: 15405893262491
+self = 1609 src = 0 srcDir =  srcFlip = False
+[('right', 2657), ('up', 0), ('left', 0), ('down', 3709)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 2657 src = 1609 srcDir = left srcFlip = True
+[('right', 0), ('up', 1153), ('left', 1217), ('down', 1609)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate left from down
+[('right', 1153), ('up', 1217), ('left', 1609), ('down', 0)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1153), ('up', 0), ('left', 1609), ('down', 1217)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 3709 src = 1609 srcDir = up srcFlip = True
+[('right', 1609), ('up', 1217), ('left', 3833), ('down', 0)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 0), ('up', 1609), ('left', 1217), ('down', 3833)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1217), ('up', 1609), ('left', 0), ('down', 3833)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 1153 src = 2657 srcDir = left srcFlip = False
+[('right', 2837), ('up', 0), ('left', 2657), ('down', 1091)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate left from left
+[('right', 2837), ('up', 0), ('left', 2657), ('down', 1091)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 1217 src = 2657 srcDir = up srcFlip = True
+[('right', 3709), ('up', 2657), ('left', 1091), ('down', 3083)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 3709), ('up', 2657), ('left', 1091), ('down', 3083)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 1091), ('up', 2657), ('left', 3709), ('down', 3083)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+self = 3833 src = 3709 srcDir = up srcFlip = False
+[('right', 3083), ('up', 2099), ('left', 0), ('down', 3709)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 0), ('up', 3709), ('left', 3083), ('down', 2099)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 3083), ('up', 3709), ('left', 0), ('down', 2099)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 2837 src = 1153 srcDir = left srcFlip = False
+[('right', 2063), ('up', 0), ('left', 1153), ('down', 3613)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate left from left
+[('right', 2063), ('up', 0), ('left', 1153), ('down', 3613)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 1091 src = 1153 srcDir = up srcFlip = True
+[('right', 1153), ('up', 3613), ('left', 3467), ('down', 1217)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from right
+[('right', 1217), ('up', 1153), ('left', 3613), ('down', 3467)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3613), ('up', 1153), ('left', 1217), ('down', 3467)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 3083 src = 1217 srcDir = up srcFlip = False
+[('right', 3467), ('up', 1217), ('left', 3833), ('down', 3163)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 3467), ('up', 1217), ('left', 3833), ('down', 3163)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2099 src = 3833 srcDir = up srcFlip = True
+[('right', 3547), ('up', 3163), ('left', 3833), ('down', 0)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 3163), ('up', 3833), ('left', 0), ('down', 3547)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+self = 2063 src = 2837 srcDir = left srcFlip = False
+[('right', 2837), ('up', 0), ('left', 1019), ('down', 2243)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate left from right
+[('right', 1019), ('up', 2243), ('left', 2837), ('down', 0)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 1019), ('up', 0), ('left', 2837), ('down', 2243)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 3613 src = 2837 srcDir = up srcFlip = True
+[('right', 1091), ('up', 3413), ('left', 2243), ('down', 2837)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 2243), ('up', 2837), ('left', 1091), ('down', 3413)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 3467 src = 1091 srcDir = up srcFlip = True
+[('right', 3083), ('up', 1091), ('left', 3413), ('down', 2131)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 3083), ('up', 1091), ('left', 3413), ('down', 2131)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3413), ('up', 1091), ('left', 3083), ('down', 2131)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 3163 src = 3083 srcDir = up srcFlip = False
+[('right', 2131), ('up', 3083), ('left', 2099), ('down', 2843)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 2131), ('up', 3083), ('left', 2099), ('down', 2843)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+self = 3547 src = 2099 srcDir = up srcFlip = False
+[('right', 2417), ('up', 0), ('left', 2099), ('down', 2843)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 0), ('up', 2099), ('left', 2843), ('down', 2417)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 2843), ('up', 2099), ('left', 0), ('down', 2417)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 1019 src = 2063 srcDir = left srcFlip = True
+[('right', 2063), ('up', 1297), ('left', 2557), ('down', 0)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate left from right
+[('right', 2557), ('up', 0), ('left', 2063), ('down', 1297)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 2243 src = 2063 srcDir = up srcFlip = False
+[('right', 1297), ('up', 1879), ('left', 3613), ('down', 2063)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 3613), ('up', 2063), ('left', 1297), ('down', 1879)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1297), ('up', 2063), ('left', 3613), ('down', 1879)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 3413 src = 3613 srcDir = up srcFlip = False
+[('right', 1879), ('up', 2749), ('left', 3467), ('down', 3613)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 3467), ('up', 3613), ('left', 1879), ('down', 2749)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1879), ('up', 3613), ('left', 3467), ('down', 2749)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 2131 src = 3467 srcDir = up srcFlip = False
+[('right', 2749), ('up', 1433), ('left', 3163), ('down', 3467)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 3163), ('up', 3467), ('left', 2749), ('down', 1433)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 2749), ('up', 3467), ('left', 3163), ('down', 1433)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 2843 src = 3163 srcDir = up srcFlip = False
+[('right', 1433), ('up', 3209), ('left', 3547), ('down', 3163)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 3547), ('up', 3163), ('left', 1433), ('down', 3209)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1433), ('up', 3163), ('left', 3547), ('down', 3209)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 2417 src = 3547 srcDir = up srcFlip = True
+[('right', 0), ('up', 3547), ('left', 3209), ('down', 2339)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 0), ('up', 3547), ('left', 3209), ('down', 2339)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 3209), ('up', 3547), ('left', 0), ('down', 2339)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+self = 2557 src = 1019 srcDir = left srcFlip = False
+[('right', 1201), ('up', 0), ('left', 1019), ('down', 1039)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate left from left
+[('right', 1201), ('up', 0), ('left', 1019), ('down', 1039)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 1297 src = 1019 srcDir = up srcFlip = False
+[('right', 1871), ('up', 2243), ('left', 1019), ('down', 1039)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 2243), ('up', 1019), ('left', 1039), ('down', 1871)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1039), ('up', 1019), ('left', 2243), ('down', 1871)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 1879 src = 2243 srcDir = up srcFlip = True
+[('right', 2531), ('up', 1871), ('left', 2243), ('down', 3413)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 1871), ('up', 2243), ('left', 3413), ('down', 2531)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 2749 src = 3413 srcDir = up srcFlip = True
+[('right', 1699), ('up', 2531), ('left', 3413), ('down', 2131)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 2531), ('up', 3413), ('left', 2131), ('down', 1699)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+self = 1433 src = 2131 srcDir = up srcFlip = True
+[('right', 2131), ('up', 1699), ('left', 1409), ('down', 2843)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 2843), ('up', 2131), ('left', 1699), ('down', 1409)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1699), ('up', 2131), ('left', 2843), ('down', 1409)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 3209 src = 2843 srcDir = up srcFlip = True
+[('right', 1187), ('up', 1409), ('left', 2843), ('down', 2417)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 1409), ('up', 2843), ('left', 2417), ('down', 1187)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 2339 src = 2417 srcDir = up srcFlip = False
+[('right', 1187), ('up', 3701), ('left', 0), ('down', 2417)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 0), ('up', 2417), ('left', 1187), ('down', 3701)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1187), ('up', 2417), ('left', 0), ('down', 3701)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 1201 src = 2557 srcDir = left srcFlip = True
+[('right', 2557), ('up', 2593), ('left', 2221), ('down', 0)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate left from right
+[('right', 2221), ('up', 0), ('left', 2557), ('down', 2593)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 1039 src = 2557 srcDir = up srcFlip = False
+[('right', 1093), ('up', 1297), ('left', 2557), ('down', 2593)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 1297), ('up', 2557), ('left', 2593), ('down', 1093)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 2593), ('up', 2557), ('left', 1297), ('down', 1093)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+self = 1871 src = 1297 srcDir = up srcFlip = True
+[('right', 1879), ('up', 1297), ('left', 1093), ('down', 1237)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 1879), ('up', 1297), ('left', 1093), ('down', 1237)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1093), ('up', 1297), ('left', 1879), ('down', 1237)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 2531 src = 1879 srcDir = up srcFlip = True
+[('right', 1489), ('up', 1237), ('left', 1879), ('down', 2749)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 1237), ('up', 1879), ('left', 2749), ('down', 1489)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 1699 src = 2749 srcDir = up srcFlip = False
+[('right', 1489), ('up', 2749), ('left', 1433), ('down', 2029)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 1489), ('up', 2749), ('left', 1433), ('down', 2029)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 1409 src = 1433 srcDir = up srcFlip = True
+[('right', 3209), ('up', 3061), ('left', 2029), ('down', 1433)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 2029), ('up', 1433), ('left', 3209), ('down', 3061)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 1187 src = 3209 srcDir = up srcFlip = True
+[('right', 2339), ('up', 3037), ('left', 3061), ('down', 3209)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 3061), ('up', 3209), ('left', 2339), ('down', 3037)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 3701 src = 2339 srcDir = up srcFlip = True
+[('right', 2339), ('up', 3037), ('left', 1549), ('down', 0)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 0), ('up', 2339), ('left', 3037), ('down', 1549)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3037), ('up', 2339), ('left', 0), ('down', 1549)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+self = 2221 src = 1201 srcDir = left srcFlip = False
+[('right', 1583), ('up', 1873), ('left', 0), ('down', 1201)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate left from down
+[('right', 1873), ('up', 0), ('left', 1201), ('down', 1583)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 2593 src = 1201 srcDir = up srcFlip = False
+[('right', 2309), ('up', 1039), ('left', 1201), ('down', 1583)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 1039), ('up', 1201), ('left', 1583), ('down', 2309)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1583), ('up', 1201), ('left', 1039), ('down', 2309)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 1093 src = 1039 srcDir = up srcFlip = False
+[('right', 2309), ('up', 3109), ('left', 1871), ('down', 1039)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 1871), ('up', 1039), ('left', 2309), ('down', 3109)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 2309), ('up', 1039), ('left', 1871), ('down', 3109)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+self = 1237 src = 1871 srcDir = up srcFlip = True
+[('right', 2531), ('up', 1483), ('left', 3109), ('down', 1871)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 3109), ('up', 1871), ('left', 2531), ('down', 1483)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 1489 src = 2531 srcDir = up srcFlip = True
+[('right', 3449), ('up', 1483), ('left', 2531), ('down', 1699)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 1483), ('up', 2531), ('left', 1699), ('down', 3449)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 2029 src = 1699 srcDir = up srcFlip = True
+[('right', 1699), ('up', 3449), ('left', 1913), ('down', 1409)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 1409), ('up', 1699), ('left', 3449), ('down', 1913)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3449), ('up', 1699), ('left', 1409), ('down', 1913)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 3061 src = 1409 srcDir = up srcFlip = False
+[('right', 1913), ('up', 3191), ('left', 1187), ('down', 1409)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 1187), ('up', 1409), ('left', 1913), ('down', 3191)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 1913), ('up', 1409), ('left', 1187), ('down', 3191)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+self = 3037 src = 1187 srcDir = up srcFlip = True
+[('right', 1187), ('up', 3191), ('left', 1009), ('down', 3701)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 3701), ('up', 1187), ('left', 3191), ('down', 1009)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 3191), ('up', 1187), ('left', 3701), ('down', 1009)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 1549 src = 3701 srcDir = up srcFlip = True
+[('right', 3541), ('up', 1009), ('left', 3701), ('down', 0)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 1009), ('up', 3701), ('left', 0), ('down', 3541)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 1873 src = 2221 srcDir = left srcFlip = False
+[('right', 1979), ('up', 0), ('left', 2221), ('down', 3229)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate left from left
+[('right', 1979), ('up', 0), ('left', 2221), ('down', 3229)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 1583 src = 2221 srcDir = up srcFlip = True
+[('right', 1499), ('up', 3229), ('left', 2221), ('down', 2593)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 3229), ('up', 2221), ('left', 2593), ('down', 1499)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 2309 src = 2593 srcDir = up srcFlip = True
+[('right', 1093), ('up', 2351), ('left', 1499), ('down', 2593)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 1499), ('up', 2593), ('left', 1093), ('down', 2351)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 3109 src = 1093 srcDir = up srcFlip = False
+[('right', 2351), ('up', 3041), ('left', 1237), ('down', 1093)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 1237), ('up', 1093), ('left', 2351), ('down', 3041)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 2351), ('up', 1093), ('left', 1237), ('down', 3041)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 1483 src = 1237 srcDir = up srcFlip = True
+[('right', 1489), ('up', 3373), ('left', 3041), ('down', 1237)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 3041), ('up', 1237), ('left', 1489), ('down', 3373)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 3449 src = 1489 srcDir = up srcFlip = True
+[('right', 1489), ('up', 3373), ('left', 2293), ('down', 2029)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 2029), ('up', 1489), ('left', 3373), ('down', 2293)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3373), ('up', 1489), ('left', 2029), ('down', 2293)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 1913 src = 2029 srcDir = up srcFlip = False
+[('right', 2293), ('up', 1117), ('left', 3061), ('down', 2029)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 3061), ('up', 2029), ('left', 2293), ('down', 1117)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 2293), ('up', 2029), ('left', 3061), ('down', 1117)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 3191 src = 3061 srcDir = up srcFlip = False
+[('right', 2579), ('up', 3037), ('left', 3061), ('down', 1117)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 3037), ('up', 3061), ('left', 1117), ('down', 2579)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1117), ('up', 3061), ('left', 3037), ('down', 2579)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 1009 src = 3037 srcDir = up srcFlip = False
+[('right', 2579), ('up', 3037), ('left', 1549), ('down', 3571)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 2579), ('up', 3037), ('left', 1549), ('down', 3571)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 3541 src = 1549 srcDir = up srcFlip = False
+[('right', 1279), ('up', 0), ('left', 1549), ('down', 3571)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 0), ('up', 1549), ('left', 3571), ('down', 1279)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3571), ('up', 1549), ('left', 0), ('down', 1279)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 1979 src = 1873 srcDir = left srcFlip = False
+[('right', 2621), ('up', 0), ('left', 1873), ('down', 3251)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate left from left
+[('right', 2621), ('up', 0), ('left', 1873), ('down', 3251)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 3229 src = 1873 srcDir = up srcFlip = True
+[('right', 1583), ('up', 1873), ('left', 3251), ('down', 3889)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 1583), ('up', 1873), ('left', 3251), ('down', 3889)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3251), ('up', 1873), ('left', 1583), ('down', 3889)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+self = 1499 src = 1583 srcDir = up srcFlip = False
+[('right', 3889), ('up', 1583), ('left', 2309), ('down', 3527)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 3889), ('up', 1583), ('left', 2309), ('down', 3527)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2351 src = 2309 srcDir = up srcFlip = True
+[('right', 3109), ('up', 2309), ('left', 3527), ('down', 3917)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 3109), ('up', 2309), ('left', 3527), ('down', 3917)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3527), ('up', 2309), ('left', 3109), ('down', 3917)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+self = 3041 src = 3109 srcDir = up srcFlip = True
+[('right', 3109), ('up', 3917), ('left', 3371), ('down', 1483)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 1483), ('up', 3109), ('left', 3917), ('down', 3371)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 3917), ('up', 3109), ('left', 1483), ('down', 3371)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 3373 src = 1483 srcDir = up srcFlip = False
+[('right', 3371), ('up', 1861), ('left', 3449), ('down', 1483)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 3449), ('up', 1483), ('left', 3371), ('down', 1861)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3371), ('up', 1483), ('left', 3449), ('down', 1861)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 2293 src = 3449 srcDir = up srcFlip = True
+[('right', 3449), ('up', 1861), ('left', 1637), ('down', 1913)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 1913), ('up', 3449), ('left', 1861), ('down', 1637)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1861), ('up', 3449), ('left', 1913), ('down', 1637)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 1117 src = 1913 srcDir = up srcFlip = True
+[('right', 3191), ('up', 1913), ('left', 1637), ('down', 2521)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 3191), ('up', 1913), ('left', 1637), ('down', 2521)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1637), ('up', 1913), ('left', 3191), ('down', 2521)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 2579 src = 3191 srcDir = up srcFlip = True
+[('right', 1009), ('up', 1777), ('left', 2521), ('down', 3191)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 2521), ('up', 3191), ('left', 1009), ('down', 1777)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 3571 src = 1009 srcDir = up srcFlip = True
+[('right', 3541), ('up', 2939), ('left', 1777), ('down', 1009)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 1777), ('up', 1009), ('left', 3541), ('down', 2939)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 1279 src = 3541 srcDir = up srcFlip = True
+[('right', 0), ('up', 3253), ('left', 2939), ('down', 3541)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 2939), ('up', 3541), ('left', 0), ('down', 3253)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+self = 2621 src = 1979 srcDir = left srcFlip = False
+[('right', 2549), ('up', 1979), ('left', 0), ('down', 0)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate left from up
+[('right', 0), ('up', 2549), ('left', 1979), ('down', 0)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 0), ('up', 0), ('left', 1979), ('down', 2549)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 3251 src = 1979 srcDir = up srcFlip = True
+[('right', 3229), ('up', 1823), ('left', 2549), ('down', 1979)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 2549), ('up', 1979), ('left', 3229), ('down', 1823)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 3889 src = 3229 srcDir = up srcFlip = False
+[('right', 1823), ('up', 3229), ('left', 1499), ('down', 2789)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 1823), ('up', 3229), ('left', 1499), ('down', 2789)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 3527 src = 1499 srcDir = up srcFlip = False
+[('right', 2789), ('up', 2819), ('left', 2351), ('down', 1499)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 2351), ('up', 1499), ('left', 2789), ('down', 2819)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 2789), ('up', 1499), ('left', 2351), ('down', 2819)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+self = 3917 src = 2351 srcDir = up srcFlip = False
+[('right', 2543), ('up', 3041), ('left', 2351), ('down', 2819)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 3041), ('up', 2351), ('left', 2819), ('down', 2543)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 2819), ('up', 2351), ('left', 3041), ('down', 2543)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 3371 src = 3041 srcDir = up srcFlip = True
+[('right', 3041), ('up', 2543), ('left', 1373), ('down', 3373)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 3373), ('up', 3041), ('left', 2543), ('down', 1373)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 2543), ('up', 3041), ('left', 3373), ('down', 1373)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 1861 src = 3373 srcDir = up srcFlip = True
+[('right', 2293), ('up', 3323), ('left', 1373), ('down', 3373)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 1373), ('up', 3373), ('left', 2293), ('down', 3323)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+self = 1637 src = 2293 srcDir = up srcFlip = True
+[('right', 1117), ('up', 2699), ('left', 3323), ('down', 2293)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 3323), ('up', 2293), ('left', 1117), ('down', 2699)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 2521 src = 1117 srcDir = up srcFlip = True
+[('right', 2579), ('up', 1877), ('left', 2699), ('down', 1117)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 2699), ('up', 1117), ('left', 2579), ('down', 1877)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 1777 src = 2579 srcDir = up srcFlip = True
+[('right', 3571), ('up', 2579), ('left', 1877), ('down', 3313)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 3571), ('up', 2579), ('left', 1877), ('down', 3313)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1877), ('up', 2579), ('left', 3571), ('down', 3313)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2939 src = 3571 srcDir = up srcFlip = True
+[('right', 1279), ('up', 3571), ('left', 3313), ('down', 1451)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 1279), ('up', 3571), ('left', 3313), ('down', 1451)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3313), ('up', 3571), ('left', 1279), ('down', 1451)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 3253 src = 1279 srcDir = up srcFlip = False
+[('right', 1451), ('up', 1279), ('left', 0), ('down', 0)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 1451), ('up', 1279), ('left', 0), ('down', 0)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 2549 src = 2621 srcDir = up srcFlip = True
+[('right', 3251), ('up', 3631), ('left', 0), ('down', 2621)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 0), ('up', 2621), ('left', 3251), ('down', 3631)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 1823 src = 3251 srcDir = up srcFlip = True
+[('right', 3251), ('up', 3631), ('left', 2539), ('down', 3889)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from right
+[('right', 3889), ('up', 3251), ('left', 3631), ('down', 2539)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 3631), ('up', 3251), ('left', 3889), ('down', 2539)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 2789 src = 3889 srcDir = up srcFlip = True
+[('right', 3889), ('up', 2539), ('left', 2633), ('down', 3527)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 3527), ('up', 3889), ('left', 2539), ('down', 2633)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 2539), ('up', 3889), ('left', 3527), ('down', 2633)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 2819 src = 3527 srcDir = up srcFlip = False
+[('right', 2633), ('up', 3527), ('left', 3917), ('down', 3529)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 2633), ('up', 3527), ('left', 3917), ('down', 3529)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 2543 src = 3917 srcDir = up srcFlip = True
+[('right', 3371), ('up', 1831), ('left', 3529), ('down', 3917)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 3529), ('up', 3917), ('left', 3371), ('down', 1831)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 1373 src = 3371 srcDir = up srcFlip = True
+[('right', 3371), ('up', 1831), ('left', 1423), ('down', 1861)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from right
+[('right', 1861), ('up', 3371), ('left', 1831), ('down', 1423)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1831), ('up', 3371), ('left', 1861), ('down', 1423)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 3323 src = 1861 srcDir = up srcFlip = True
+[('right', 1637), ('up', 2903), ('left', 1423), ('down', 1861)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 1423), ('up', 1861), ('left', 1637), ('down', 2903)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 2699 src = 1637 srcDir = up srcFlip = True
+[('right', 2521), ('up', 3347), ('left', 2903), ('down', 1637)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 2903), ('up', 1637), ('left', 2521), ('down', 3347)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 1877 src = 2521 srcDir = up srcFlip = True
+[('right', 3319), ('up', 3347), ('left', 2521), ('down', 1777)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 3347), ('up', 2521), ('left', 1777), ('down', 3319)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 3313 src = 1777 srcDir = up srcFlip = False
+[('right', 3319), ('up', 1601), ('left', 2939), ('down', 1777)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 2939), ('up', 1777), ('left', 3319), ('down', 1601)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 3319), ('up', 1777), ('left', 2939), ('down', 1601)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 1451 src = 2939 srcDir = up srcFlip = True
+[('right', 3253), ('up', 2939), ('left', 1601), ('down', 0)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 3253), ('up', 2939), ('left', 1601), ('down', 0)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1601), ('up', 2939), ('left', 3253), ('down', 0)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 3631 src = 2549 srcDir = up srcFlip = False
+[('right', 0), ('up', 2549), ('left', 1823), ('down', 2083)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 0), ('up', 2549), ('left', 1823), ('down', 2083)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2539 src = 1823 srcDir = up srcFlip = True
+[('right', 1823), ('up', 2083), ('left', 1471), ('down', 2789)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 2789), ('up', 1823), ('left', 2083), ('down', 1471)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 2083), ('up', 1823), ('left', 2789), ('down', 1471)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2633 src = 2789 srcDir = up srcFlip = False
+[('right', 1471), ('up', 3301), ('left', 2819), ('down', 2789)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 2819), ('up', 2789), ('left', 1471), ('down', 3301)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1471), ('up', 2789), ('left', 2819), ('down', 3301)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 3529 src = 2819 srcDir = up srcFlip = True
+[('right', 1277), ('up', 3301), ('left', 2819), ('down', 2543)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 3301), ('up', 2819), ('left', 2543), ('down', 1277)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 1831 src = 2543 srcDir = up srcFlip = True
+[('right', 1373), ('up', 2543), ('left', 1277), ('down', 2441)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 1373), ('up', 2543), ('left', 1277), ('down', 2441)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1277), ('up', 2543), ('left', 1373), ('down', 2441)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 1423 src = 1373 srcDir = up srcFlip = True
+[('right', 3697), ('up', 2441), ('left', 1373), ('down', 3323)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate up from left
+[('right', 2441), ('up', 1373), ('left', 3323), ('down', 3697)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 2903 src = 3323 srcDir = up srcFlip = True
+[('right', 2699), ('up', 3323), ('left', 3697), ('down', 2659)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 2699), ('up', 3323), ('left', 3697), ('down', 2659)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 3697), ('up', 3323), ('left', 2699), ('down', 2659)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 3347 src = 2699 srcDir = up srcFlip = True
+[('right', 1877), ('up', 2879), ('left', 2659), ('down', 2699)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 2659), ('up', 2699), ('left', 1877), ('down', 2879)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 3319 src = 1877 srcDir = up srcFlip = False
+[('right', 2879), ('up', 1877), ('left', 3313), ('down', 3079)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 2879), ('up', 1877), ('left', 3313), ('down', 3079)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 1601 src = 3313 srcDir = up srcFlip = True
+[('right', 3313), ('up', 3079), ('left', 0), ('down', 1451)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Rotate up from right
+[('right', 1451), ('up', 3313), ('left', 3079), ('down', 0)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 3079), ('up', 3313), ('left', 1451), ('down', 0)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 2083 src = 3631 srcDir = up srcFlip = False
+[('right', 1301), ('up', 2539), ('left', 3631), ('down', 0)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 2539), ('up', 3631), ('left', 0), ('down', 1301)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 0), ('up', 3631), ('left', 2539), ('down', 1301)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 1471 src = 2539 srcDir = up srcFlip = False
+[('right', 1301), ('up', 2539), ('left', 2633), ('down', 2609)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 1301), ('up', 2539), ('left', 2633), ('down', 2609)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 3301 src = 2633 srcDir = up srcFlip = True
+[('right', 2633), ('up', 2609), ('left', 1151), ('down', 3529)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from right
+[('right', 3529), ('up', 2633), ('left', 2609), ('down', 1151)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 2609), ('up', 2633), ('left', 3529), ('down', 1151)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+self = 1277 src = 3529 srcDir = up srcFlip = False
+[('right', 1151), ('up', 3529), ('left', 1831), ('down', 1223)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 1151), ('up', 3529), ('left', 1831), ('down', 1223)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 2441 src = 1831 srcDir = up srcFlip = False
+[('right', 1223), ('up', 1831), ('left', 1423), ('down', 3169)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 1223), ('up', 1831), ('left', 1423), ('down', 3169)]
+[('right', True), ('up', True), ('left', False), ('down', False)]
+self = 3697 src = 1423 srcDir = up srcFlip = True
+[('right', 3343), ('up', 3169), ('left', 1423), ('down', 2903)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 3169), ('up', 1423), ('left', 2903), ('down', 3343)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 2659 src = 2903 srcDir = up srcFlip = False
+[('right', 3343), ('up', 2903), ('left', 3347), ('down', 1567)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from up
+[('right', 3343), ('up', 2903), ('left', 3347), ('down', 1567)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2879 src = 3347 srcDir = up srcFlip = False
+[('right', 1567), ('up', 3347), ('left', 3319), ('down', 3967)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 1567), ('up', 3347), ('left', 3319), ('down', 3967)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 3079 src = 3319 srcDir = up srcFlip = False
+[('right', 0), ('up', 1601), ('left', 3319), ('down', 3967)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from left
+[('right', 1601), ('up', 3319), ('left', 3967), ('down', 0)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3967), ('up', 3319), ('left', 1601), ('down', 0)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 1301 src = 2083 srcDir = up srcFlip = True
+[('right', 1471), ('up', 2083), ('left', 0), ('down', 3761)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 1471), ('up', 2083), ('left', 0), ('down', 3761)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 0), ('up', 2083), ('left', 1471), ('down', 3761)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+self = 2609 src = 1471 srcDir = up srcFlip = True
+[('right', 3301), ('up', 2371), ('left', 3761), ('down', 1471)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 3761), ('up', 1471), ('left', 3301), ('down', 2371)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 1151 src = 3301 srcDir = up srcFlip = False
+[('right', 2371), ('up', 1627), ('left', 1277), ('down', 3301)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 1277), ('up', 3301), ('left', 2371), ('down', 1627)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 2371), ('up', 3301), ('left', 1277), ('down', 1627)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 1223 src = 1277 srcDir = up srcFlip = False
+[('right', 1627), ('up', 2671), ('left', 2441), ('down', 1277)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 2441), ('up', 1277), ('left', 1627), ('down', 2671)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1627), ('up', 1277), ('left', 2441), ('down', 2671)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 3169 src = 2441 srcDir = up srcFlip = False
+[('right', 2671), ('up', 2441), ('left', 3697), ('down', 1709)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 2671), ('up', 2441), ('left', 3697), ('down', 1709)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 3343 src = 3697 srcDir = up srcFlip = True
+[('right', 2659), ('up', 3697), ('left', 1709), ('down', 1181)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 2659), ('up', 3697), ('left', 1709), ('down', 1181)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1709), ('up', 3697), ('left', 2659), ('down', 1181)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 1567 src = 2659 srcDir = up srcFlip = False
+[('right', 1753), ('up', 2879), ('left', 2659), ('down', 1181)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from left
+[('right', 2879), ('up', 2659), ('left', 1181), ('down', 1753)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 1181), ('up', 2659), ('left', 2879), ('down', 1753)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 3967 src = 2879 srcDir = up srcFlip = True
+[('right', 3079), ('up', 0), ('left', 1753), ('down', 2879)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 1753), ('up', 2879), ('left', 3079), ('down', 0)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 3761 src = 1301 srcDir = up srcFlip = False
+[('right', 0), ('up', 3739), ('left', 2609), ('down', 1301)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 2609), ('up', 1301), ('left', 0), ('down', 3739)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 0), ('up', 1301), ('left', 2609), ('down', 3739)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 2371 src = 2609 srcDir = up srcFlip = False
+[('right', 3739), ('up', 1811), ('left', 1151), ('down', 2609)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 1151), ('up', 2609), ('left', 3739), ('down', 1811)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Src flip (True)
+[('right', 3739), ('up', 2609), ('left', 1151), ('down', 1811)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+self = 1627 src = 1151 srcDir = up srcFlip = True
+[('right', 1151), ('up', 1811), ('left', 3853), ('down', 1223)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 1223), ('up', 1151), ('left', 1811), ('down', 3853)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1811), ('up', 1151), ('left', 1223), ('down', 3853)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+self = 2671 src = 1223 srcDir = up srcFlip = True
+[('right', 3169), ('up', 1223), ('left', 3853), ('down', 2383)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 3169), ('up', 1223), ('left', 3853), ('down', 2383)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3853), ('up', 1223), ('left', 3169), ('down', 2383)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+self = 1709 src = 3169 srcDir = up srcFlip = True
+[('right', 3361), ('up', 2383), ('left', 3169), ('down', 3343)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 2383), ('up', 3169), ('left', 3343), ('down', 3361)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 1181 src = 3343 srcDir = up srcFlip = True
+[('right', 1567), ('up', 2917), ('left', 3361), ('down', 3343)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 3361), ('up', 3343), ('left', 1567), ('down', 2917)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 1753 src = 1567 srcDir = up srcFlip = True
+[('right', 0), ('up', 2917), ('left', 1567), ('down', 3967)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 2917), ('up', 1567), ('left', 3967), ('down', 0)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+self = 3739 src = 3761 srcDir = up srcFlip = True
+[('right', 3761), ('up', 0), ('left', 3517), ('down', 2371)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from right
+[('right', 2371), ('up', 3761), ('left', 0), ('down', 3517)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 0), ('up', 3761), ('left', 2371), ('down', 3517)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+self = 1811 src = 2371 srcDir = up srcFlip = True
+[('right', 1289), ('up', 3517), ('left', 2371), ('down', 1627)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 3517), ('up', 2371), ('left', 1627), ('down', 1289)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 3853 src = 1627 srcDir = up srcFlip = False
+[('right', 1289), ('up', 1933), ('left', 2671), ('down', 1627)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 2671), ('up', 1627), ('left', 1289), ('down', 1933)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1289), ('up', 1627), ('left', 2671), ('down', 1933)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 2383 src = 2671 srcDir = up srcFlip = False
+[('right', 1933), ('up', 2389), ('left', 1709), ('down', 2671)]
+[('right', True), ('up', True), ('left', True), ('down', True)]
+Rotate up from down
+[('right', 1709), ('up', 2671), ('left', 1933), ('down', 2389)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1933), ('up', 2671), ('left', 1709), ('down', 2389)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 3361 src = 1709 srcDir = up srcFlip = True
+[('right', 3907), ('up', 2389), ('left', 1709), ('down', 1181)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from left
+[('right', 2389), ('up', 1709), ('left', 1181), ('down', 3907)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 2917 src = 1181 srcDir = up srcFlip = True
+[('right', 1753), ('up', 0), ('left', 3907), ('down', 1181)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from down
+[('right', 3907), ('up', 1181), ('left', 1753), ('down', 0)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+self = 3517 src = 3739 srcDir = up srcFlip = False
+[('right', 3767), ('up', 1811), ('left', 3739), ('down', 0)]
+[('right', True), ('up', False), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 1811), ('up', 3739), ('left', 0), ('down', 3767)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 0), ('up', 3739), ('left', 1811), ('down', 3767)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+self = 1289 src = 1811 srcDir = up srcFlip = True
+[('right', 3853), ('up', 1811), ('left', 3767), ('down', 1493)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Rotate up from up
+[('right', 3853), ('up', 1811), ('left', 3767), ('down', 1493)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 3767), ('up', 1811), ('left', 3853), ('down', 1493)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+self = 1933 src = 3853 srcDir = up srcFlip = False
+[('right', 1259), ('up', 2383), ('left', 3853), ('down', 1493)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 2383), ('up', 3853), ('left', 1493), ('down', 1259)]
+[('right', True), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1493), ('up', 3853), ('left', 2383), ('down', 1259)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+self = 2389 src = 2383 srcDir = up srcFlip = True
+[('right', 3361), ('up', 2383), ('left', 1259), ('down', 2887)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 3361), ('up', 2383), ('left', 1259), ('down', 2887)]
+[('right', False), ('up', True), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 1259), ('up', 2383), ('left', 3361), ('down', 2887)]
+[('right', False), ('up', False), ('left', False), ('down', False)]
+self = 3907 src = 3361 srcDir = up srcFlip = False
+[('right', 2887), ('up', 0), ('left', 2917), ('down', 3361)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 2917), ('up', 3361), ('left', 2887), ('down', 0)]
+[('right', True), ('up', False), ('left', True), ('down', True)]
+Src flip (True)
+[('right', 2887), ('up', 3361), ('left', 2917), ('down', 0)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+self = 3767 src = 3517 srcDir = up srcFlip = True
+[('right', 1289), ('up', 1453), ('left', 0), ('down', 3517)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 0), ('up', 3517), ('left', 1289), ('down', 1453)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 1493 src = 1289 srcDir = up srcFlip = False
+[('right', 1453), ('up', 1289), ('left', 1933), ('down', 2897)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 1453), ('up', 1289), ('left', 1933), ('down', 2897)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 1259 src = 1933 srcDir = up srcFlip = False
+[('right', 2897), ('up', 1933), ('left', 2389), ('down', 3407)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from up
+[('right', 2897), ('up', 1933), ('left', 2389), ('down', 3407)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+self = 2887 src = 2389 srcDir = up srcFlip = False
+[('right', 3407), ('up', 0), ('left', 3907), ('down', 2389)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Rotate up from down
+[('right', 3907), ('up', 2389), ('left', 3407), ('down', 0)]
+[('right', True), ('up', False), ('left', False), ('down', True)]
+Src flip (True)
+[('right', 3407), ('up', 2389), ('left', 3907), ('down', 0)]
+[('right', False), ('up', True), ('left', True), ('down', False)]
+self = 1453 src = 3767 srcDir = up srcFlip = True
+[('right', 3299), ('up', 0), ('left', 3767), ('down', 1493)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Rotate up from left
+[('right', 0), ('up', 3767), ('left', 1493), ('down', 3299)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+self = 2897 src = 1493 srcDir = up srcFlip = False
+[('right', 3299), ('up', 1459), ('left', 1259), ('down', 1493)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate up from down
+[('right', 1259), ('up', 1493), ('left', 3299), ('down', 1459)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 3299), ('up', 1493), ('left', 1259), ('down', 1459)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 3407 src = 1259 srcDir = up srcFlip = True
+[('right', 0), ('up', 1459), ('left', 1259), ('down', 2887)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+Rotate up from left
+[('right', 1459), ('up', 1259), ('left', 2887), ('down', 0)]
+[('right', False), ('up', False), ('left', True), ('down', True)]
+self = 3299 src = 1453 srcDir = up srcFlip = False
+[('right', 1123), ('up', 2897), ('left', 1453), ('down', 0)]
+[('right', True), ('up', True), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 2897), ('up', 1453), ('left', 0), ('down', 1123)]
+[('right', True), ('up', False), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 0), ('up', 1453), ('left', 2897), ('down', 1123)]
+[('right', False), ('up', True), ('left', True), ('down', True)]
+self = 1459 src = 2897 srcDir = up srcFlip = True
+[('right', 3407), ('up', 2897), ('left', 1123), ('down', 0)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Rotate up from up
+[('right', 3407), ('up', 2897), ('left', 1123), ('down', 0)]
+[('right', False), ('up', True), ('left', False), ('down', False)]
+Src flip (True)
+[('right', 1123), ('up', 2897), ('left', 3407), ('down', 0)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+self = 1123 src = 3299 srcDir = up srcFlip = True
+[('right', 0), ('up', 0), ('left', 3299), ('down', 1459)]
+[('right', False), ('up', False), ('left', True), ('down', False)]
+Rotate up from left
+[('right', 0), ('up', 3299), ('left', 1459), ('down', 0)]
+[('right', False), ('up', False), ('left', False), ('down', True)]
+1609 [('right', 2657), ('up', 0), ('left', 0), ('down', 3709)]
+1609 [('right', True), ('up', True), ('left', True), ('down', True)]
+3709 [('right', 1217), ('up', 1609), ('left', 0), ('down', 3833)]
+1609	2657	1153	2837	2063	1019	2557	1201	2221	1873	1979	2621	
+3709	1217	1091	3613	2243	1297	1039	2593	1583	3229	3251	2549	
+3833	3083	3467	3413	1879	1871	1093	2309	1499	3889	1823	3631	
+2099	3163	2131	2749	2531	1237	3109	2351	3527	2789	2539	2083	
+3547	2843	1433	1699	1489	1483	3041	3917	2819	2633	1471	1301	
+2417	3209	1409	2029	3449	3373	3371	2543	3529	3301	2609	3761	
+2339	1187	3061	1913	2293	1861	1373	1831	1277	1151	2371	3739	
+3701	3037	3191	1117	1637	3323	1423	2441	1223	1627	1811	3517	
+1549	1009	2579	2521	2699	2903	3697	3169	2671	3853	1289	3767	
+3541	3571	1777	1877	3347	2659	3343	1709	2383	1933	1493	1453	
+1279	2939	3313	3319	2879	1567	1181	3361	2389	1259	2897	3299	
+3253	1451	1601	3079	3967	1753	2917	3907	2887	3407	1459	1123	
+Num monsters: 0
+Water roughness: 2628
