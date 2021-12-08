@@ -19,7 +19,7 @@ def solveLine (codedDigits, output):
    
 
 
-f = open("day08.txt")
+f = open("data/day08.txt")
 
 digits = []
 outputs = []

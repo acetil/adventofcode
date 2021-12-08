@@ -6,7 +6,7 @@ def updateFish (buckets):
 
     return buckets
 
-f = open("day06.txt")
+f = open("data/day06.txt")
 
 l = [int(i) for i in f.readline().split(",")]
 

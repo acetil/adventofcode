@@ -8,7 +8,7 @@ def hasWon (board):
     return any(sum(i) == -len(board) for i in board) or any(sum(board[j][i] for j in range(len(board))) == -len(board[0]) for i in range(len(board[0])))
 
 
-f = open("day04.txt")
+f = open("data/day04.txt")
 
 rand = [int(i) for i in f.readline().split(",")]
 

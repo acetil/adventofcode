@@ -4,7 +4,7 @@ def getFuelCostP1 (l, n):
 def getFuelCostP2 (l, n):
     return sum(abs(i - n) * (abs(i - n) + 1) // 2 for i in l)
 
-f = open("day07.txt")
+f = open("data/day07.txt")
 
 l = [int(i) for i in f.readline().split(",")]
 

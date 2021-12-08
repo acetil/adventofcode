@@ -1,4 +1,4 @@
-f = open("day02.txt")
+f = open("data/day02.txt")
 
 totalVec1 = (0, 0)
 totalVec2 = (0, 0)

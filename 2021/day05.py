@@ -47,7 +47,7 @@ class Line:
         return points
 
 
-f = open("day05.txt")
+f = open("data/day05.txt")
 
 lines = [Line(i) for i in f.readlines() if i.strip() != ""]
 
