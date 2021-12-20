@@ -1,2 +1,5 @@
-day*.txt
 __pycache__/
+*
+!/**/
+!*.*
+day*.txt
