@@ -1,3 +1,4 @@
+#![allow(non_snake_case)]
 mod solutions;
 
 use std::env;
@@ -5,13 +6,14 @@ use std::env;
 use std::fs::File;
 use std::io::BufReader;
 
-use solutions::day1;
+use solutions::{day1, day2};
 
 #[allow(non_snake_case)]
 
 fn executeDay (day: i32, file: File) {
     match day {
         1 => day1::solve(BufReader::new(file)),
+        2 => day2::solve(BufReader::new(file)),
         _ => panic!("Unknown day: {}!", day),
     }
 }
