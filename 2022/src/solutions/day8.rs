@@ -1,6 +1,7 @@
-use std::{io::{BufReader, BufRead}, fs::File, cell::{Cell}};
+use std::{io::{BufReader, BufRead}, fs::File, cell::Cell};
 
 #[derive(Debug)]
+#[derive(Clone, Copy)]
 enum Direction {
     UP,
     DOWN,
@@ -9,192 +10,203 @@ enum Direction {
 }
 
 #[derive(Debug)]
-struct Tree {
+struct DirectedEdge {
+    toNode: usize,
+    dir: Direction,
+    visibleSize: Cell<Option<i32>>
+}
+
+#[derive(Debug)]
+struct Node {
     size: i32,
     index: usize,
-    
-    leftNode: Option<usize>,
-    rightNode: Option<usize>,
-    upNode: Option<usize>,
-    downNode: Option<usize>,
-    
-    leftVisible: Cell<Option<(i32, i32)>>,
-    rightVisible: Cell<Option<(i32, i32)>>,
-    upVisible: Cell<Option<(i32, i32)>>,
-    downVisible: Cell<Option<(i32, i32)>>
+
+    leftEdge: Option<DirectedEdge>,
+    rightEdge: Option<DirectedEdge>,
+    upEdge: Option<DirectedEdge>,
+    downEdge: Option<DirectedEdge>
 }
 
-struct Graph {
-    trees: Vec<Box<Tree>>,
-    width: isize,
-    height: isize,
+#[derive(Debug)]
+struct NodeGraph {
+    nodes: Vec<Node>,
+    width: usize,
+    height: usize
 }
-impl Tree {
-    pub fn new (size: i32, index: usize) -> Tree {
-        Tree { 
-            size, 
-            index,
-            leftNode: None, 
-            rightNode: None, 
-            upNode: None, 
-            downNode: None, 
-            leftVisible: Cell::new(None), 
-            rightVisible: Cell::new(None), 
-            upVisible: Cell::new(None), 
-            downVisible: Cell::new(None) 
+
+impl DirectedEdge {
+    pub fn new (toNode: usize, dir: Direction) -> DirectedEdge {
+        DirectedEdge { 
+            toNode, 
+            dir,
+            visibleSize: Cell::new(None) 
         }
     }
 
-    pub fn addAdjacent (self: &mut Tree, leftNode: Option<usize>, rightNode: Option<usize>, upNode: Option<usize>, downNode: Option<usize>) {
-        self.leftNode = leftNode;
-        self.rightNode = rightNode;
-        self.upNode = upNode;
-        self.downNode = downNode;
+    fn calculateMaxVisibleSize (self: &DirectedEdge, graph: &NodeGraph) -> i32 {
+        let nextNode = graph.getNode(self.toNode);
+
+        let nextEdge = nextNode.getEdge(self.dir);
+
+        let visibleSize = std::cmp::max(nextEdge.map(|e| e.getMaxVisibleSize(graph)).unwrap_or(-1), nextNode.size);
+
+        self.visibleSize.replace(Some(visibleSize));
+
+        visibleSize
     }
 
-    fn getNext (oldScore: (i32, i32), newScore: (i32, i32)) -> (i32, i32) {
-        if oldScore.0 > newScore.0 {
-            (oldScore.0, oldScore.1 + 1)
+    pub fn getMaxVisibleSize (self: &DirectedEdge, graph: &NodeGraph) -> i32 {
+        self.visibleSize.get().unwrap_or_else(|| self.calculateMaxVisibleSize(graph))
+    }
+
+    pub fn getViewingDistance (self: &DirectedEdge, graph: &NodeGraph, maxSize: i32) -> usize {
+        let nextNode = graph.getNode(self.toNode);
+
+        if nextNode.size >= maxSize {
+            1
         } else {
-            (newScore.0, newScore.1 + 1)
+            nextNode.getEdge(self.dir)
+                .map(|e| e.getViewingDistance(graph, maxSize))
+                .unwrap_or(0) + 1
         }
     }
 
-    fn calculateVisibleSize (self: &Tree, graph: &Graph, direction: Direction, node: &Option<usize>, visible: &Cell<Option<(i32, i32)>>) -> (i32, i32) {
-        let val = node.and_then(|n| graph.getTree(n)).map(|t| Self::getNext(t.getVisibleSizeDir(graph, direction), (t.getSize(), 0))).unwrap_or((-1, 0));
+}
 
-        visible.replace(Some(val));
-
-        val
-    }
-
-    /*fn calculateVisibleDir (self: &Tree, graph: &Graph, direction: Direction, node: &Option<usize>, visible: &Cell<Option<i32>>) -> bool {
-        visible.get()
-            .unwrap_or_else(|| {
-                let result: bool = node.and_then(|t| graph.getTree(t))
-                    .map(|t| t.isVisibleDir(graph, direction) && t.size < self.size)
-                    .unwrap_or(true);
-
-                visible.replace(Some(result));
-
-                result
-            })
-        
-        visible.replace(val)
-    }*/
-
-    pub fn getVisibleSizeDir (self: &Tree, graph: &Graph, direction: Direction) -> (i32, i32) {
-        match direction {
-            Direction::LEFT => self.leftVisible.get().unwrap_or_else(|| self.calculateVisibleSize(graph, direction, &self.leftNode, &self.leftVisible)),
-            Direction::RIGHT => self.rightVisible.get().unwrap_or_else(|| self.calculateVisibleSize(graph, direction, &self.rightNode, &self.rightVisible)),
-            Direction::UP => self.upVisible.get().unwrap_or_else(|| self.calculateVisibleSize(graph, direction, &self.upNode, &self.upVisible)),
-            Direction::DOWN => self.downVisible.get().unwrap_or_else(|| self.calculateVisibleSize(graph, direction, &self.downNode, &self.downVisible)),
+impl Node {
+    pub fn new (index: usize, size: i32) -> Node {
+        Node { 
+            size, 
+            index, 
+            leftEdge: None, 
+            rightEdge: None, 
+            upEdge: None, 
+            downEdge: None 
         }
     }
 
-    pub fn isVisibleDir (self: &Tree, graph: &Graph, direction: Direction) -> bool {
-        self.getVisibleSizeDir(graph, direction).0 < self.size
+    pub fn setEdges (self: &mut Node, leftEdge: Option<DirectedEdge>, rightEdge: Option<DirectedEdge>, upEdge: Option<DirectedEdge>, downEdge: Option<DirectedEdge>) {
+        self.leftEdge = leftEdge;
+        self.rightEdge = rightEdge;
+        self.upEdge = upEdge;
+        self.downEdge = downEdge;
     }
 
-    pub fn isVisible (self: &Tree, graph: &Graph) -> bool {
-        self.isVisibleDir(graph, Direction::LEFT) || self.isVisibleDir(graph, Direction::RIGHT) 
-            || self.isVisibleDir(graph, Direction::UP) || self.isVisibleDir(graph, Direction::DOWN)
+    pub fn getEdge (self: &Node, dir: Direction) -> Option<&DirectedEdge> {
+        match dir {
+            Direction::LEFT => self.leftEdge.as_ref(),
+            Direction::RIGHT => self.rightEdge.as_ref(),
+            Direction::UP => self.upEdge.as_ref(),
+            Direction::DOWN => self.downEdge.as_ref(),
+        }
     }
 
-    pub fn getScoreDir (self: &Tree, graph: &Graph, direction: Direction) -> i32 {
-        dbg!((self.index, &direction));
-        let x = self.getVisibleSizeDir(graph, direction);
-        dbg!(x);
-        x.1
+    fn isVisibleDir (self: &Node, graph: &NodeGraph, dir: Direction) -> bool {
+        self.getEdge(dir)
+            .map(|e| e.getMaxVisibleSize(graph))
+            .map(|s| s < self.size)
+            .unwrap_or(true)
     }
 
-    pub fn calculateScore (self: &Tree, graph: &Graph) -> i32 {
-        return self.getScoreDir(graph, Direction::LEFT) * self.getScoreDir(graph, Direction::RIGHT) 
-                * self.getScoreDir(graph, Direction::UP) * self.getScoreDir(graph, Direction::DOWN)
+    fn getViewingDistance (self: &Node, graph: &NodeGraph, dir: Direction) -> usize {
+        self.getEdge(dir)
+            .map(|e| e.getViewingDistance(graph, self.size))
+            .unwrap_or(0)
     }
 
-    pub fn getIndex (self: &Tree) -> usize {
-        return self.index
+    pub fn isVisible (self: &Node, graph: &NodeGraph) -> bool {
+        self.isVisibleDir(graph, Direction::LEFT) 
+            || self.isVisibleDir(graph, Direction::RIGHT) 
+            || self.isVisibleDir(graph, Direction::UP) 
+            || self.isVisibleDir(graph, Direction::DOWN)
     }
 
-    pub fn getSize (self: &Tree) -> i32 {
-        return self.size
+    pub fn getScore (self: &Node, graph: &NodeGraph) -> usize {
+        self.getViewingDistance(graph, Direction::LEFT) 
+            * self.getViewingDistance(graph, Direction::RIGHT) 
+            * self.getViewingDistance(graph, Direction::UP) 
+            * self.getViewingDistance(graph, Direction::DOWN)
     }
 }
 
-impl Graph {
-    pub fn new<T> (lines: T) -> Graph where T: Iterator<Item = String> {
-        let mut graph: Graph = Graph { 
-            trees: Vec::new(),
-            width: 0,
-            height: 0 
-        };
+impl NodeGraph {
+    pub fn new<T> (lines: T) -> NodeGraph where T: Iterator<Item = String> {
+        let mut nodes = Vec::<Node>::new();
+
+        let mut width: usize = 0;
+        let mut height: usize = 0;
 
         for l in lines {
-            let mut currXSize: isize = 0;
+            let mut lineSize: usize = 0;
             for c in l.chars() {
-                graph.trees.push(Box::new(Tree::new(c.to_digit(10).unwrap().try_into().unwrap(), graph.trees.len())));
-
-                currXSize += 1;
+                nodes.push(Node::new(nodes.len(), c.to_digit(10).unwrap() as i32));
+                lineSize += 1;
             }
 
-            if graph.width == 0 {
-                graph.width = currXSize;
-            }
-
-
-            graph.height += 1;
+            width = std::cmp::max(width, lineSize);
+            height += 1;
         }
 
-        for y in 0..graph.height {
-            for x in 0..graph.width {
-                let index = graph.getTreeIndex(x, y).unwrap();
-                let leftNode = graph.getTreeIndex(x - 1, y);
-                let rightNode = graph.getTreeIndex(x + 1, y);
-                let upNode = graph.getTreeIndex(x, y - 1);
-                let downNode = graph.getTreeIndex(x, y + 1);
+        let mut graph = NodeGraph {
+            nodes,
+            width,
+            height
+        };
 
-                let tree: &mut Tree = graph.trees.get_mut(index).unwrap();
+        graph.setupConnections();
 
-                tree.addAdjacent(leftNode, rightNode, upNode, downNode);
+        graph
+    }
+
+
+    fn setupConnections (self: &mut NodeGraph) {
+        for x in 0..self.width as isize {
+            for y in 0..self.height as isize {
+                let nodeIndex = self.getIndexFromPos((x, y)).unwrap();
+                let leftEdge = self.getIndexFromPos((x - 1, y)).map(|i| DirectedEdge::new(i, Direction::LEFT));
+                let rightEdge = self.getIndexFromPos((x + 1, y)).map(|i| DirectedEdge::new(i, Direction::RIGHT));
+                let upEdge = self.getIndexFromPos((x, y - 1)).map(|i| DirectedEdge::new(i, Direction::UP));
+                let downEdge = self.getIndexFromPos((x, y + 1)).map(|i| DirectedEdge::new(i, Direction::DOWN));
+
+                let node = self.nodes.get_mut(nodeIndex).unwrap();
+
+                node.setEdges(leftEdge, rightEdge, upEdge, downEdge);
             }
         }
-
-        //dbg!(&graph.trees);
-
-        return graph
     }
 
-    pub fn getTree<'a> (self: &'a Graph, index: usize) -> Option<&'a Tree> {
-        self.trees.get(index).map(|b| b.as_ref())
-    }
-
-    pub fn getTreeIndex (self: &Graph, x: isize, y: isize) -> Option<usize> {
-        if 0 <= x && x < self.width && 0 <= y && y < self.height {
-            self.trees.get((y * self.width + x) as usize).map(|t| t.getIndex())
+    fn getIndexFromPos (self: &NodeGraph, pos: (isize, isize)) -> Option<usize> {
+        if pos.0 >= 0 && (pos.0 as usize) < self.width && pos.1 >= 0 && (pos.1 as usize) < self.height {
+            Some((pos.1 as usize) * self.width + (pos.0 as usize))
         } else {
             None
         }
     }
 
-    pub fn getNumTrees (self: &Graph) -> usize {
-        self.trees.len()
+    pub fn getNode (self: &NodeGraph, index: usize) -> &Node {
+        self.nodes.get(index).unwrap()
+    }
+
+    pub fn getNumNodes (self: &NodeGraph) -> usize {
+        self.nodes.len()
     }
 }
 
-
-
 pub fn solve (file: BufReader<File>) {
-    let graph = Graph::new(file.lines().filter_map(Result::ok));
+    let graph = NodeGraph::new(file.lines().filter_map(Result::ok));
 
-    let numVisible = (0..graph.getNumTrees()).filter_map(|i| graph.getTree(i)).filter(|t| t.isVisible(&graph)).count();
+    let numVisible = (0..graph.getNumNodes())
+        .map(|i| graph.getNode(i))
+        .filter(|n| n.isVisible(&graph))
+        .count();
+    
+    println!("Visible trees: {numVisible}");
 
-    println!("Number of trees visible: {}", numVisible);
-
-    let maxScore = (0..graph.getNumTrees()).filter_map(|i| graph.getTree(i)).map(|t| (t.getIndex(), t.calculateScore(&graph))).map(|p| {
-        dbg!(&p);
-        p.1
-    }).max().unwrap();
-
-    println!("Maximum score: {}", maxScore);
+    let maxScore = (0..graph.getNumNodes())
+        .map(|i| graph.getNode(i))
+        .map(|n| n.getScore(&graph))
+        .max()
+        .unwrap();
+    
+    println!("Max viewing score: {maxScore}");
 }
