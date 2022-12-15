@@ -19,7 +19,6 @@ struct DirectedEdge {
 #[derive(Debug)]
 struct Node {
     size: i32,
-    index: usize,
 
     leftEdge: Option<DirectedEdge>,
     rightEdge: Option<DirectedEdge>,
@@ -74,10 +73,9 @@ impl DirectedEdge {
 }
 
 impl Node {
-    pub fn new (index: usize, size: i32) -> Node {
+    pub fn new (size: i32) -> Node {
         Node { 
             size, 
-            index, 
             leftEdge: None, 
             rightEdge: None, 
             upEdge: None, 
@@ -139,7 +137,7 @@ impl NodeGraph {
         for l in lines {
             let mut lineSize: usize = 0;
             for c in l.chars() {
-                nodes.push(Node::new(nodes.len(), c.to_digit(10).unwrap() as i32));
+                nodes.push(Node::new(c.to_digit(10).unwrap() as i32));
                 lineSize += 1;
             }
 
