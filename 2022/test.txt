@@ -1,3 +1,0 @@
-Day 13
-Right order index sum: 6240
-Decode key: 25215
