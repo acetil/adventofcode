@@ -2,11 +2,12 @@ mod solutions;
 
 use std::{env, io::{self, BufReader}, fs::File};
 
-use solutions::day1;
+use solutions::{day1, day2};
 
 fn solve (num: i32, path: Option<String>) -> io::Result<()> {
     let func = match num {
         1 => day1::solve,
+        2 => day2::solve,
         _ => {
             println!("Day {num} is not yet implemented!");
             return Ok(())
