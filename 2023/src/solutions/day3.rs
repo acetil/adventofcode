@@ -1,4 +1,4 @@
-use std::{io::{BufReader, self, BufRead}, fs::File, collections::{HashSet, HashMap}, cell::RefCell, rc::Rc};
+use std::{io::{BufReader, self, BufRead}, fs::File, cell::RefCell, rc::Rc, collections::HashMap};
 
 use regex::Regex;
 
