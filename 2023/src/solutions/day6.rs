@@ -18,13 +18,12 @@ fn get_power_10 (n: i64) -> i64 {
     i
 }
 
-pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
-    let mut line: String = String::new();
-    file.read_line(&mut line)?;
+pub fn solve (input: &str) {
+    let mut lines = input.lines();
 
-    let times: Vec<i64> = line.split(":")
-        .last()
-        .unwrap()
+    let times: Vec<i64> = lines.next().unwrap()
+        .split(":")
+        .last().unwrap()
         .trim()
         .split(" ")
         .filter(|s| !s.trim().is_empty())
@@ -32,11 +31,9 @@ pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
         .map(Result::unwrap)
         .collect();
 
-    line.clear();
-    file.read_line(&mut line)?;
-    let distances: Vec<i64> = line.split(":")
-        .last()
-        .unwrap()
+    let distances: Vec<i64> = lines.next().unwrap()
+        .split(":")
+        .last().unwrap()
         .trim()
         .split(" ")
         .filter(|s| !s.trim().is_empty())
@@ -57,6 +54,4 @@ pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
         .fold(0, |a, &b| (a * get_power_10(b) + b));
 
     println!("Part 2: {}", calc_answer(time, distance));
-
-    Ok(())
 }

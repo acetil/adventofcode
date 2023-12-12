@@ -48,7 +48,7 @@ struct Graph {
 }
 
 impl Graph {
-    pub fn new (lines: Vec<String>) -> Self {
+    pub fn new (lines: Vec<&str>) -> Self {
         let regex = Regex::new(r"([0-9A-Z]{3}) = \(([0-9A-Z]{3}), ([0-9A-Z]{3})\)").unwrap();
 
         let node_tups: Vec<(&str, &str, &str)> = lines.iter()
@@ -120,17 +120,16 @@ fn lcm (a: usize, b: usize) -> usize {
     a * b / gcd(a, b)
 }
 
-pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
-    let mut line: String = String::new();
-    file.read_line(&mut line)?;
+pub fn solve (input: &str) {
+    let mut lines = input.lines();
 
-    let instructions = line.trim()
+    let instructions = lines.next().unwrap()
+        .trim()
         .chars()
         .filter_map(Direction::new)
         .collect_vec();
 
-    file.read_line(&mut line)?;
-    let graph = Graph::new(file.lines().try_collect()?);
+    let graph = Graph::new(lines.skip(1).collect());
 
     let mut curr = graph.get_id("AAA").unwrap();
     let target = graph.get_id("ZZZ").unwrap();
@@ -146,6 +145,4 @@ pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
 
     println!("Part 1: {len}");
     println!("Part 2: {}", graph.solve_p2(&instructions));
-
-    Ok(())
 }

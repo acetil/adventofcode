@@ -1,4 +1,4 @@
-use std::{io::{BufReader, self, BufRead}, fs::File, collections::{HashMap, HashSet}};
+use std::collections::{HashMap, HashSet};
 
 fn curr_digit (line: &str, prefixes: &HashSet<&str>, digits: &HashMap<&str, i32>) -> Option<i32> {
     let mut index: usize = 1;
@@ -24,7 +24,7 @@ fn do_line (line: &str, prefixes: &HashSet<&str>, digits: &HashMap<&str, i32>) -
     first * 10 + last
 }
 
-fn find_sum (lines: &Vec<String>, digits: &HashMap<&str, i32>) -> i32 {
+fn find_sum (lines: &Vec<&str>, digits: &HashMap<&str, i32>) -> i32 {
     let prefixes: HashSet<&str> = digits.keys()
         .map(|s| (0..s.len()).map(|i| &s[0..i + 1]))
         .flatten()
@@ -35,7 +35,7 @@ fn find_sum (lines: &Vec<String>, digits: &HashMap<&str, i32>) -> i32 {
         .sum()
 }
 
-fn part1 (lines: &Vec<String>) -> i32 {
+fn part1 (lines: &Vec<&str>) -> i32 {
     let digits = HashMap::from([
         ("0", 0),
         ("1", 1),
@@ -52,7 +52,7 @@ fn part1 (lines: &Vec<String>) -> i32 {
     find_sum(lines, &digits)
 }
 
-fn part2 (lines: &Vec<String>) -> i32 {
+fn part2 (lines: &Vec<&str>) -> i32 {
     let digits = HashMap::from([
         ("0", 0),
         ("1", 1),
@@ -78,11 +78,9 @@ fn part2 (lines: &Vec<String>) -> i32 {
     find_sum(lines, &digits)
 }
 
-pub fn solve (file: BufReader<File>) -> io::Result<()> {
-    let lines = file.lines()
-        .collect::<io::Result<Vec<String>>>()?;
+pub fn solve (input: &str) {
+    let lines = input.lines().collect();
 
     println!("Part 1: {}", part1(&lines));
     println!("Part 2: {}", part2(&lines));
-    Ok(())
 }

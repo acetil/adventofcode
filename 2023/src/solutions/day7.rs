@@ -120,10 +120,10 @@ fn rank_counts (counts: &[u8;6]) -> u32 {
     }
 }
 
-pub fn solve (file: BufReader<File>) -> io::Result<()> {
-    let hands: Vec<Hand> = file.lines()
-        .map(|r| r.map(|s| Hand::new(&s)))
-        .try_collect()?;
+pub fn solve (input: &str) {
+    let hands: Vec<Hand> = input.lines()
+        .map(Hand::new)
+        .collect();
 
     let part1: i64 = hands.iter()
         .map(Hand::score_p1)
@@ -140,6 +140,4 @@ pub fn solve (file: BufReader<File>) -> io::Result<()> {
         .map(|(i, h)| h.bid * (i + 1) as i64)
         .sum();
     println!("Part 2: {part2}");
-
-    Ok(())
 }

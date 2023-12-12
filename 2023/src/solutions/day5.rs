@@ -50,41 +50,33 @@ impl <'a, I: Iterator<Item=&'a((i64, i64), i64)>> Iterator for RangeIt<I> {
     }
 }
 
-fn parse_seeds (file: &mut BufReader<File>) -> io::Result<Vec<i64>> {
-    let mut s: String = String::new();
-    file.read_line(&mut s)?;
-
-    Ok(s.split(":")
+fn parse_seeds (input: &str) -> Vec<i64> {
+    input.split(":")
         .last().unwrap()
         .trim()
         .split(" ")
         .map(str::parse)
         .map(Result::unwrap)
-        .collect::<Vec<i64>>())
+        .collect()
 }
 
 type Map = Vec<((i64, i64), i64)>;
 
-fn parse_map (file: &mut BufReader<File>) -> io::Result<Map> {
-    let mut line: String = String::new();
-    file.read_line(&mut line)?;
-    line.clear();
-    file.read_line(&mut line)?;
+fn parse_map (map: &str) -> Map {
+    let lines = map.lines().skip(1);
     let mut map: Map = Vec::new();
 
-    while !line.trim().is_empty() {
-        let nums: Vec<i64> = line.trim().split(" ")
+    for l in lines {
+        let nums: Vec<i64> = l.trim().split(" ")
             .map(str::parse)
             .map(Result::unwrap)
             .collect();
         map.push(((nums[1], nums[1] + nums[2]), nums[0] - nums[1]));
-        line.clear();
-        file.read_line(&mut line)?;
     }
 
     map.sort_by_key(|m| m.0);
 
-    Ok(map)
+    map
 }
 
 fn simulate <I: Iterator<Item=(i64, i64)>> (maps: &Vec<Map>, seed_ranges: I) -> i64 {
@@ -101,15 +93,14 @@ fn simulate <I: Iterator<Item=(i64, i64)>> (maps: &Vec<Map>, seed_ranges: I) -> 
         .0
 }
 
-pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
-    let seeds: Vec<i64> = parse_seeds(&mut file)?;
+pub fn solve (input: &str) {
+    let mut in_iter = input.split("\n\n");
 
-    let mut s: String = String::new();
-    file.read_line(&mut s)?;
+    let seeds: Vec<i64> = parse_seeds(in_iter.next().unwrap());
 
-    let maps: Vec<Map> = (0..7)
-        .map(|_| parse_map(&mut file))
-        .collect::<io::Result<Vec<Map>>>()?;
+    let maps: Vec<Map> = in_iter
+        .map(parse_map)
+        .collect();
 
     let part1 = simulate(&maps, seeds.iter().map(|i| (*i, i + 1)));
     println!("Part 1: {part1}");
@@ -118,6 +109,4 @@ pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
         .tuples()
         .map(|(a, b)| (*a, *a + *b)));
     println!("Part 2: {part2}");
-
-    Ok(())
 }

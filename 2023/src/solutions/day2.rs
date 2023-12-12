@@ -31,7 +31,7 @@ pub fn parse_turn (turn: &str) -> Turn {
     (num_red, num_blue, num_green)
 }
 
-pub fn parse_game (line: String) -> Game {
+pub fn parse_game (line: &str) -> Game {
     let mut split = line.split(":");
     let id: u32 = split.next()
         .unwrap()
@@ -62,10 +62,10 @@ pub fn calc_power (game: &Game) -> u32 {
     return num_red * num_blue * num_green;
 }
 
-pub fn solve (file: BufReader<File>) -> io::Result<()> {
-    let games = file.lines()
-        .map(|l| l.map(parse_game))
-        .collect::<io::Result<Vec<Game>>>()?;
+pub fn solve (input: &str) {
+    let games = input.lines()
+        .map(parse_game)
+        .collect::<Vec<Game>>();
 
     let sum: u32 = games.iter()
         .filter(|g| check_game_p1(*g))
@@ -75,6 +75,4 @@ pub fn solve (file: BufReader<File>) -> io::Result<()> {
 
     let power: u32 = games.iter().map(calc_power).sum();
     println!("Part 2: {power}");
-
-    Ok(())
 }

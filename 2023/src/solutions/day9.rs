@@ -52,14 +52,14 @@ fn seq_prev (seq: &Vec<i64>) -> i64 {
     }
 }
 
-pub fn solve (file: BufReader<File>) -> io::Result<()> {
-    let lines: Vec<Vec<i64>> = file.lines()
-        .map(|r| r.map(|l| l.trim()
+pub fn solve (input: &str) {
+    let lines: Vec<Vec<i64>> = input.lines()
+        .map(|l| l.trim()
             .split(" ")
             .map(str::parse)
             .map(Result::unwrap)
-            .collect()))
-        .try_collect()?;
+            .collect())
+        .collect();
     
     let part1: i64 = lines.iter()
         .map(seq_next)
@@ -70,6 +70,4 @@ pub fn solve (file: BufReader<File>) -> io::Result<()> {
         .map(seq_prev)
         .sum();
     println!("Part 2: {part2}");
-
-    Ok(())
 }

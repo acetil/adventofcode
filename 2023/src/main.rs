@@ -1,6 +1,6 @@
 mod solutions;
 
-use std::{env, io::{self, BufReader}, fs::File};
+use std::{env, io::{self, BufReader, Read}, fs::File};
 
 use solutions::{day1, day2, day3, day4, day5, day6, day7, day8, day9, day10};
 
@@ -26,8 +26,12 @@ fn solve (num: i32, path: Option<String>) -> io::Result<()> {
 
     let file = File::open(&file_path)
         .expect(&format!("Failed to open file at \"{}\"!", file_path));
+    let mut file_str: String = String::new();
+    BufReader::new(file).read_to_string(&mut file_str)?;
 
-    func(BufReader::new(file))
+    func(&file_str);
+
+    Ok(())
 }
 
 fn main() -> io::Result<()>{

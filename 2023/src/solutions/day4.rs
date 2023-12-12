@@ -58,10 +58,10 @@ impl Card {
     }
 }
 
-pub fn solve (file: BufReader<File>) -> io::Result<()> {
-    let cards = file.lines()
-        .map(|r| r.map(|s| Card::new(&s)))
-        .collect::<io::Result<Vec<Card>>>()?;
+pub fn solve (input: &str){
+    let cards: Vec<Card> = input.lines()
+        .map(Card::new)
+        .collect();
 
     let part1: u32 = cards.iter()
         .map(Card::matches)
@@ -83,6 +83,4 @@ pub fn solve (file: BufReader<File>) -> io::Result<()> {
 
     let part2: u32 = copies.iter().sum();
     println!("Part 2: {part2}");
-
-    Ok(())
 }

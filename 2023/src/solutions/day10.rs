@@ -162,10 +162,10 @@ struct Grid {
 }
 
 impl Grid {
-    pub fn new (file: &mut BufReader<File>) -> io::Result<Self> {
-        let cells: Vec<Vec<Cell>> = file.lines()
-            .map(|r| r.map(|s| s.chars().map(Cell::new).collect_vec()))
-            .try_collect()?;
+    pub fn new (input: &str) -> Self {
+        let cells: Vec<Vec<Cell>> = input.lines()
+            .map(|s| s.chars().map(Cell::new).collect())
+            .collect();
 
         let start = cells.iter()
             .enumerate()
@@ -179,10 +179,10 @@ impl Grid {
             .next()
             .unwrap();
 
-        Ok(Self {
+        Self {
             cells,
             start
-        })
+        }
     }
 
     pub fn get (&'_ self, pos: Pos) -> Option<&'_ Cell> {
@@ -257,8 +257,8 @@ fn is_enclosed (pos: Pos, corners: &Vec<Pos>) -> bool {
         .count() % 2 == 1
 }
 
-pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
-    let mut grid = Grid::new(&mut file)?;
+pub fn solve (input: &str) {
+    let mut grid = Grid::new(input);
 
     let path = find_path(&mut grid);
 
@@ -282,6 +282,4 @@ pub fn solve (mut file: BufReader<File>) -> io::Result<()> {
         }
     }
     println!("Part 2: {enclosed}");
-
-    Ok(())
 }

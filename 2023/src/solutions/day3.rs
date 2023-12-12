@@ -6,9 +6,9 @@ struct Gear {
     adj: Vec<usize>
 }
 
-pub fn solve (file: BufReader<File>) -> io::Result<()>  {
-    let lines = file.lines()
-        .collect::<io::Result<Vec<String>>>()?;
+pub fn solve (input: &str) {
+    let lines: Vec<&str> = input.lines()
+        .collect();
 
     let y_size = lines.len();
     let x_size = lines[0].len();
@@ -108,6 +108,4 @@ pub fn solve (file: BufReader<File>) -> io::Result<()>  {
 
 
     println!("Part 2: {gear_sum}");
-
-    Ok(())
 }
