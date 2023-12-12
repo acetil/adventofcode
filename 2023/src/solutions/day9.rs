@@ -1,7 +1,3 @@
-use std::{io::{BufReader, self, BufRead}, fs::File};
-
-use itertools::Itertools;
-
 fn seq_next (seq: &Vec<i64>) -> i64 {
     if seq.len() == 1 {
         return *seq.first().unwrap();

@@ -1,5 +1,3 @@
-use std::{io::{BufReader, self, BufRead}, fs::File};
-
 type Turn = (u32, u32, u32);
 type Game = (u32, Vec<Turn>);
 

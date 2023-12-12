@@ -1,5 +1,3 @@
-use std::{io::{BufReader, self, BufRead}, fs::File};
-
 fn calc_answer (time: i64, dist: i64) -> i64 {
     // n(t - n) = d
     // nt - n^2 = d

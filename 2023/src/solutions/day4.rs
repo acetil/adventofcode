@@ -1,4 +1,4 @@
-use std::{io::{BufReader, self, BufRead}, fs::File, cmp::min};
+use std::cmp::min;
 
 struct Card {
     //id: u32,
