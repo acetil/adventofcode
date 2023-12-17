@@ -5,7 +5,7 @@ enum Instruction <'a> {
 
 impl <'a> Instruction <'a> {
     pub fn new (s: &'a str) -> Self{
-        let mut ch_it = s.char_indices().skip_while(|(i, c)| *c != '-' && *c != '=');
+        let mut ch_it = s.char_indices().skip_while(|(_, c)| *c != '-' && *c != '=');
         let sep = ch_it.next().unwrap();
 
         if sep.1 == '-' {
